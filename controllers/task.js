@@ -10,6 +10,7 @@ export const newTask = async (req, res, next) => {
       description,
       user: req.user,
     });
+    console.log(req.user);
 
     res.status(201).json({
       success: true,
